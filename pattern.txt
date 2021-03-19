@@ -1,0 +1,19 @@
+import java.util.*;
+class Pattern{
+	
+public static void main(String[] args){
+	Scanner sc=new Scanner(System.in);
+	int i,j,num;
+	System.out.println("Enter the number");
+	int range=sc.nextInt();
+	for(i=1;i<=range;i++){
+		for(j=1;j<=5;j++){
+			if(j<(6-i))
+			System.out.print(" ");
+			else
+		System.out.print("*");
+}
+System.out.println();
+}
+}
+}
