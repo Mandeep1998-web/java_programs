@@ -1,0 +1,24 @@
+import java.util.*;
+class Pyramid_Second{
+public static void main(String[] args){
+	Scanner obj=new Scanner(System.in);
+	System.out.println("Enter the number");
+	int num=obj.nextInt();
+	int i,j;
+	int f=1;
+	for(i=1;i<=num;i++){
+	 
+	for(j=1;j<=9;j++){
+		if(j>=6-i&&j<=4+i&&f==1){
+			System.out.print("*");
+			f=0;
+		}
+		else{
+			System.out.print(" ");
+			f=1;
+		}	
+	}
+	System.out.println();
+}
+}
+}
