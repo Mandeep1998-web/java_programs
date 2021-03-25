@@ -1,0 +1,21 @@
+import java.util.*;
+public class Pattern_Third{
+	public static void main(String[] args){
+		Scanner obj=new Scanner(System.in);
+		int rows=5,col=9,space;
+		int i,j;
+	
+		for(i=0;i<5;i++){
+		
+				for(space=0;space<=rows-i;space++){
+				System.out.print(" ");
+				}
+				int number=1;
+				for(j=0;j<=i;j++){
+				System.out.print(" "+number);
+				number=number*(i-j)/(j+1);
+	}
+	System.out.println();
+}
+	}
+}
