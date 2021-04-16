@@ -1,0 +1,27 @@
+public class HelloWorld{
+    public static int check(int num1,int num2){
+        int multiply=num1*num1;
+        if(num2==multiply)
+        return 1;
+        else
+        return 0;
+    }
+public static void checkarray(int arr[]){
+   int result,i;
+   for(i=0;i<arr.length-1;i++){
+       result=check(arr[i],arr[i+1]);
+       if(result==0){
+           System.out.println("No the elements in array is square of previous number");
+           break;
+       }
+   }
+       if(i==arr.length-1)
+       System.out.println("yes the elements in array is square of previous number");
+          
+       
+}
+     public static void main(String []args){
+        int arr[]={3,9,81,65610};
+        checkarray(arr);
+     }
+}
