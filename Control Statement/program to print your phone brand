@@ -1,0 +1,27 @@
+//program to print your phone brand
+import java.util.*;
+public class Main{
+    public static void main(String args[]){
+      Scanner obj=new Scanner(System.in);
+      System.out.println("Enter 1 for samsung");
+      System.out.println("Enter 2 for apple");
+       System.out.println("Enter 3 for vivo");
+       System.out.println("Enter a number");
+       int num=obj.nextInt();// or take string num="samsung"
+      switch(num){
+          
+          case 1:// or  case "samsung":
+              System.out.println("your phone name is samsung");
+              break;
+              
+          case 2:
+                System.out.println("your phone name is apple");
+              break;
+         
+        
+         case 3:
+              System.out.println("your phone name is vivo");
+              break;
+      }
+    }
+}
