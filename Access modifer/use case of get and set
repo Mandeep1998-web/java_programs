@@ -1,0 +1,42 @@
+package com.unacademy;
+public class DreamCompany{
+    public String companyName;
+    public String companyLocation;
+    public int companypackageinlacs;
+    
+    public String getCompanyName(){
+        return companyName;
+    }
+    public void setCompanyName(String name){
+        companyName=name;
+    }
+    public String getcompanyLocation()
+    {
+        return companyLocation;
+    }
+    public void setcompanyLocation(String location){
+        companyLocation=location;
+    }
+    public int getpackageinlacs()
+    {
+        return companypackageinlacs;
+    }
+    public void setpackageinlacs(int packageinlacs){
+        companypackageinlacs=packageinlacs;
+    }
+    public void dowork(){
+        System.out.println("i am working in company "+companyName);
+        System.out.println("i am working in location "+companyLocation);
+        
+    }
+
+public static void main(String args[]){
+    DreamCompany mydreamcompany;
+   mydreamcompany= new DreamCompany();
+    mydreamcompany.setCompanyName("google");
+     mydreamcompany.setcompanyLocation("hyderabad");
+     mydreamcompany.setpackageinlacs(30);
+     mydreamcompany.dowork();
+    
+}
+}
