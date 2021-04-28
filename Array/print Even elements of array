@@ -1,0 +1,32 @@
+/******************************************************************************
+
+Java Program to print the elements of an array present on even position
+
+*******************************************************************************/
+import java.util.*;
+public class Main
+{
+    public static void Even_Postion(int arr[]){
+        Scanner obj1=new Scanner(System.in);
+        int l=arr.length;
+        int resultant_Array[]=new int[l];
+        System.out.println("the even elements in array");
+        for(int i=0;i<l;i++){
+           if(arr[i]%2==0){
+               System.out.println(arr[i]);
+           }
+        }
+      }
+	public static void main(String[] args) {
+	    Scanner obj=new Scanner(System.in);
+		System.out.println("Enter the number of array");
+		int num=obj.nextInt();
+		int arr[]=new int[num];
+		int i;
+		System.out.println("Entered elements are");
+		for(i=0;i<arr.length;i++){
+		    arr[i]=obj.nextInt();
+		}
+		Even_Postion(arr);
+	}
+}
