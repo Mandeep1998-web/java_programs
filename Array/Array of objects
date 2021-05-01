@@ -1,0 +1,23 @@
+
+import java.util.*;
+class Main
+{
+    public String name;
+    public int id;
+}
+public class Arrayofobjects{
+	public static void main(String[] args) {
+		Main obj[]=new Main[2];
+		obj[0]=new Main();
+		obj[0].name="mandeep";
+		obj[0].id=1;
+		
+		obj[1]=new Main();
+		obj[1].name="singh";
+		obj[1].id=2;
+		
+	for(int i=0;i<obj.length;i++)
+	   System.out.println("person name is "+obj[i].name+"\n id is "+obj[i].id);
+		
+	}
+}
