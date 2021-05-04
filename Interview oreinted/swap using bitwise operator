@@ -1,0 +1,19 @@
+//program to swap two numbers using bitwsie operator
+import java.util.*;
+public class Main{
+public static void swap(int n1,int n2){
+    n1=n1^n2;
+    n2=n1^n2;
+    n1=n1^n2;
+    System.out.println("the value of n1 :"+n1);
+    System.out.println("the value of n2 :"+n2);
+}
+     public static void main(String []args){
+     Scanner obj=new Scanner(System.in);
+        System.out.println("Enter the two values");
+        int num1=obj.nextInt();
+        int num2=obj.nextInt();
+        swap(num1,num2);
+        
+     }
+}
