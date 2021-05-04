@@ -1,0 +1,18 @@
+//program to find smallest number using ternary
+import java.util.*;
+public class Main{
+public static void swap(int a,int b,int c){
+int temp=a<b?a:b;
+int result=temp<c?temp:c;
+System.out.println(result);
+}
+     public static void main(String []args){
+     Scanner obj=new Scanner(System.in);
+        System.out.println("Enter the three values");
+        int num1=obj.nextInt();
+        int num2=obj.nextInt();
+        int num3=obj.nextInt();
+        swap(num1,num2,num3);
+        
+     }
+}
