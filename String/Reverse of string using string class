@@ -1,0 +1,19 @@
+import java.util.*;
+public class Main
+{
+public static void reverse(String str){
+    Scanner obj=new Scanner(System.in);
+    int l=str.length();
+    char arr[]=new char[l];
+    for(int i=l-1,j=0;i>=0;i--,j++){
+       arr[j]=str.charAt(i);
+    }
+    for(int k=0;k<arr.length;k++){
+        System.out.print(arr[k]);
+    }
+}
+	public static void main(String[] args) {
+		String str="mandeep";
+		reverse(str);
+	}
+}
