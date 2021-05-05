@@ -1,0 +1,13 @@
+import java.util.*;
+public class Main
+{
+public static void reverse(String str){
+   StringBuffer s=new StringBuffer(str);
+   System.out.println("the reverse of the string is "+s.reverse());
+   
+}
+	public static void main(String[] args) {
+		String str="mandeep";
+		reverse(str);
+	}
+}
