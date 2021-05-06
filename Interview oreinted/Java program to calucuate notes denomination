@@ -1,0 +1,34 @@
+/******************************************************************************
+
+                            Online Java Compiler.
+                Code, Compile, Run and Debug java program online.
+Write your code in this editor and press "Run" button to execute it.
+
+*******************************************************************************/
+
+
+	// Online Java Compiler
+// Use this editor to write, compile and run your Java code online
+import java.util.*;
+public class Main
+{
+    public static void main(String[] args) {
+        Scanner obj=new Scanner(System.in); 
+        System.out.println("Enter the value of money");
+        int num=obj.nextInt();
+        if(num<5)
+        {
+            System.out.println(num/100+"number of hundred rupee note");
+        }
+        else{
+            int h=5;
+            int f=(num-500)/500;
+            h+=(num-500)%500/100;
+            if(h>5){
+                f+=1;
+                h=h-5;
+            }
+            System.out.println(f+" five houndred rupee\n"+h+" one hundred rupee");
+        }
+    }
+}
