@@ -1,0 +1,24 @@
+
+class MyInteger{
+    private int x;
+    //constructor
+    MyInteger(int j){
+        x=j;
+    }
+    //public api
+    public int intValue(){
+        return x;
+    }
+}
+    public class Main{
+    public static void main(String[] args) {
+       int x=10;
+       //java defined wrapper class
+       Integer num=new Integer(x);//num is wrapper class object
+       System.out.println(num.intValue());
+       
+       //Custom defined wrapper class
+       MyInteger num1=new MyInteger(x);
+       System.out.println(num1.intValue());
+    }
+}
