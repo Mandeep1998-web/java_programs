@@ -1,0 +1,25 @@
+
+class areaofrectangle{
+     int length;
+     int width;
+  public  int find_area(int length,int width){
+        this.length=length;
+        this.width=width;
+        return length*width;
+    }
+}
+class volumeofrectangle extends areaofrectangle{
+     int height;
+  public  void find_volume(int height,int area){
+        this.height=height;
+        System.out.println(height*area);
+    }
+}
+class HelloWorld {
+    public static void main(String[] args) {
+        volumeofrectangle obj2=new volumeofrectangle();
+        int get_area=obj2.find_area(10,20);
+        obj2.find_volume(10,get_area);
+        //System.out.println(final_result);
+    }
+}
