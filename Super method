@@ -1,0 +1,24 @@
+//Method overriding
+import java.util.*;
+class Super{
+  void show(){
+      System.out.println("base class invoked");
+  }
+}
+class Superderived extends Super {
+             
+    void show(){
+        super.show();
+   // int Area(int length,int breadth,int height){//area of rectangle=length*breadth
+    System.out.println("the  derived show  invoked");
+    }
+        //return length*breadth*height;
+    }
+public class Main{
+
+     public static void main(String []args){
+        //System.out.println("Hello World");
+        Superderived s=new Superderived();
+        s.show();
+     }
+}
