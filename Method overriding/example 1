@@ -1,0 +1,31 @@
+//Method overriding
+class Square{
+    int Area(int side,int side1){
+   int result=side*side1;//area of square side * side
+   return result;
+}
+}
+class Rectangle {
+    int Area(int length,int breadth,int height){//area of rectangle=length*breadth
+    System.out.println("the  class show area of rectangle invoked");
+        return length*breadth*height;
+    }
+}
+class triangle {
+    int Area(int base,int height){
+    System.out.println("the class shows the area of triangle");
+    return (base*height)/2;
+    }
+}
+public class Main{
+
+     public static void main(String []args){
+        //System.out.println("Hello World");
+        Square s=new Square();
+        Rectangle r=new Rectangle();
+        triangle d=new triangle();
+       System.out.println(s.Area(5,5));
+        System.out.println(r.Area(2,3,4));
+        System.out.println(d.Area(2,2));
+     }
+}
