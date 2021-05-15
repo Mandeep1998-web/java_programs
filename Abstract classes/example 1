@@ -1,0 +1,39 @@
+/******************************************************************************
+Abstract class
+
+*******************************************************************************/
+import java.util.*;
+abstract class shape{
+    int s1,s2;
+    shape(int a,int b)
+    {
+        s1=a;
+        s2=b;
+    }
+    abstract int area();
+}
+class rectangle extends shape{
+    rectangle(int a,int b){
+    super(a,b);
+    }
+    int area(){
+        return s1*s2;
+    }
+}
+class triangle extends shape{
+   triangle(int a,int b){
+    super(a,b);
+   }
+    int area(){
+        return 2*s1*s2;
+    }
+}
+public class Main
+{
+	public static void main(String[] args) {
+	  shape  obj=new rectangle(10,2);// here paramterized constructor
+	 triangle obj1=new triangle(20,3);
+	  System.out.println(obj.area());
+	  System.out.println(obj1.area());
+	}
+}
