@@ -1,0 +1,28 @@
+
+import java.util.*;
+interface car{
+    void info();// so they are implicitly abstract and public
+}
+class tata implements car{
+    public void info(){
+        System.out.println("tata interface execute");
+    }
+}
+class tatanexon implements car{
+    public void info(){
+        System.out.println("tatanexon interface executed");
+    }
+}
+public class Main
+{
+	public static void main(String[] args) {
+		car obj[]={ 
+		           new tata(),
+		           new tatanexon()
+	};
+		for(car i :obj)
+		{
+		    i.info();
+		}
+	}
+}
