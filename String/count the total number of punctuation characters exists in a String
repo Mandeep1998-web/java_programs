@@ -1,0 +1,22 @@
+/******************************************************************************
+Java Program to count the total number of punctuation characters exists in a String
+*******************************************************************************/
+public class Main
+{
+	public static void main(String[] args) {
+	    int count=0;
+		String str="mandeep is a good boy , and the same time is Brave ?!";
+	 for(int i=0;i<str.length();i++){
+	     if(str.charAt(i)>='A' && str.charAt(i)<='Z')
+	     {
+	         count++;
+	     }
+	     else if(str.charAt(i)=='!' || str.charAt(i)==',' || str.charAt(i)==':' || str.charAt(i)==';' || str.charAt(i)=='?')
+	    {
+	        count++;
+	    }
+	    
+	}
+	System.out.println(count);
+}
+}
