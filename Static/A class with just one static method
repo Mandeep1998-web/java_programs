@@ -1,0 +1,18 @@
+/******************************************************************************
+A class with just one static method 
+
+*******************************************************************************/
+class staticmethod{
+    static void A(){
+        System.out.println("Static method A executed");
+    }
+}
+public class Main
+{
+	public static void main(String[] args) {
+		staticmethod.A();//call by classname
+		staticmethod obj=new staticmethod();
+		obj.A();//call by object
+		(new staticmethod()).A();//it is also creating an object and call 
+	}
+}
