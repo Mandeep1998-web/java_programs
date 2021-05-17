@@ -1,0 +1,32 @@
+/******************************************************************************
+Java Program to divide a string in 'N' equal parts.
+*******************************************************************************/
+import java.util.*;
+public class Main
+{
+    public static void check(String str){
+        int l=str.length();
+        int temp=0,n=3,c=l/n,i;
+        String[] equals=new String[c];
+        if(l%c!=0){
+            System.out.println("the string can't be divide into equal parts");
+        }
+        else{
+            for(i=0;i<l;i+=c){
+              equals[temp] = str.substring(i,i+c);//here last index is exclusive
+              temp++;
+            }
+        }
+        System.out.println(n+"equal parts of the string are:");
+        for(int k=0;k<equals.length;k++){
+            System.out.println(equals[k]);
+        }
+    }
+	public static void main(String[] args) {
+	    Scanner obj=new Scanner(System.in);
+	    String str;
+		System.out.println("Enter the string");
+		str=obj.nextLine();
+		check(str);
+	}
+}
