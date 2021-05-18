@@ -1,0 +1,29 @@
+/******************************************************************************
+static example
+*******************************************************************************/
+class base {
+  public static  void display(){
+        System.out.println("display base class");
+    }
+    void study(){
+        System.out.println("study base class");
+    }
+}
+    class derived extends base{
+    public static  void display(){
+        System.out.println("display derived class");
+    }
+    void study(){
+        System.out.println("study derived  class");
+    }
+}
+public class Main
+{
+	public static void main(String[] args) {
+	    base obj=new derived();
+	    obj.display();
+	    obj.study();
+	//	System.out.println("Hello World");
+	}
+}
+//here there is no runtime polymorphism for static members whereas it is acheived for non static members
