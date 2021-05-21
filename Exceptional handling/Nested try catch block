@@ -1,0 +1,22 @@
+//Nested try catch block
+class Main{
+    public static void main(String args[]){
+        int result;
+        try{
+            int num1=Integer.parseInt(args[0]);//commangd line argument
+            int num2=Integer.parseInt(args[1]);
+            try{
+            result=num1/num2;
+            System.out.println(result);
+            }
+            catch(ArithmeticException e){
+                System.out.println("Exception message"+e.getMessage());
+            }
+        }
+            catch(NumberFormatException E)
+            {
+                System.out.println("Exception message"+E.getMessage());
+            }
+        }
+        
+}
