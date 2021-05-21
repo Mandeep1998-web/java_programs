@@ -1,0 +1,19 @@
+
+
+public class Main
+{
+	public static void main(String[] args) {
+		//System.out.println("Hello World");
+	   try{
+            throw new NumberFormatException("explicit Exception thrown");
+        }
+        catch(NumberFormatException E){
+            System.out.println("caught Exception and rethrow it ");
+            throw E;// whatever is thrown here it is handled by jvm
+        }
+        catch(Exception e){
+            System.out.println("caught Exception and rethrow it");
+	}
+	}
+
+}
