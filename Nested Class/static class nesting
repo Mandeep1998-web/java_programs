@@ -1,0 +1,16 @@
+
+import java.util.*;
+//public class Main{
+ public class Outer{
+    static String str="outer string";
+     static   class Inner{
+          void demo(){
+                System.out.println("string is"+str);
+            }
+        }
+	public static void main(String[] args) {
+	Outer.Inner sobj;
+		sobj=new Outer.Inner();
+		sobj.demo();
+	}
+}
