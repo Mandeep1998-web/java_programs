@@ -1,0 +1,13 @@
+public class OuterClass{
+    private String str="o";
+    class Inner{
+        void demo(){
+            System.out.println("str");
+        }
+    }
+    
+
+     public static void main(String []args){
+      new OuterClass().new Inner().demo();
+     }
+}
