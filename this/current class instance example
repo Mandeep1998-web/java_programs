@@ -1,0 +1,17 @@
+//super is used to refer immediate parent class instance variable
+package com.company;
+    class parent{
+        int salary;
+        parent(int salary){
+           this.salary=salary;
+           System.out.println(salary);
+
+        }
+
+}
+public class Main {
+    public static void main(String[] args) {
+        parent obj=new parent(5000);
+
+    }
+}
