@@ -13,7 +13,7 @@ class Person{
 class Employee extends  Person{
     float salary;
      Employee(String name,int id,float salary){
-        super(name,id);//by this i am using the constructor of parent class
+        super(name,id);//by this i am using the constructor of parent class //for using this there should be constructor in parent class
         this.salary=salary;
          System.out.println(salary);
     }
