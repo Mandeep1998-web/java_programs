@@ -1,0 +1,24 @@
+//to invoke current class constructor // reuse the constructor
+package com.company;
+class Person{
+    String name;
+    int id;
+    Person(String name,int id){
+        this.name=name;
+        this.id=id;
+        System.out.println(name);
+    }
+
+}
+class Employee extends  Person{
+    float salary;
+     Employee(String name,int id,float salary){
+        super(name,id);//by this i am using the constructor of parent class
+        this.salary=salary;
+         System.out.println(salary);
+    }
+}
+class Main{
+    public static void main(String args[]){
+        Employee obj=new Employee("mandeep",101,20000);
+    }}
