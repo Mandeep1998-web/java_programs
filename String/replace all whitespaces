@@ -1,0 +1,18 @@
+//Java Program to determine whether two strings are equal or not
+package com.company;
+
+public class Main {
+    public static void main(String[] args) {
+        String str = "dfdf dfdf";
+        int len = str.length();
+        int i;
+        // String result=str.replaceAll("\\s","");
+        for (i = 0; i < len; i++) {
+            if (str.charAt(i) != ' ') {
+                System.out.print(str.charAt(i));
+            } else
+                continue;
+        }
+    }
+}
+
