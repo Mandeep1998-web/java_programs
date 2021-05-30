@@ -1,0 +1,12 @@
+//Java program to ReverseString using StringBuilder
+public class HelloWorld{
+
+     public static void main(String []args){
+        String str="mandeep";
+        StringBuilder obj=new StringBuilder();
+        obj.append(str);
+        obj.reverse();
+        System.out.println(obj);
+    
+     }
+}
