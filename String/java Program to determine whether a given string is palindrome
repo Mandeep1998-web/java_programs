@@ -1,0 +1,28 @@
+//java Program to determine whether a given string is palindrome
+package com.company;
+
+import java.util.Locale;
+
+public class Main {
+
+    public static void main(String[] args) {
+        // if you want to use the character array then you have to use char arr[]={'r','b','r'};
+boolean flag=true;
+String str="malylam";
+int l=str.length();
+String lo=str.toLowerCase();
+int i;
+for(i=0;i<l/2;i++){
+    if(lo.charAt(i)!=lo.charAt(l-i-1))
+    {
+        flag=false;
+        System.out.println("they are not palindrome");
+        break;
+    }
+}
+if(flag){
+    System.out.println("they are palindrome");
+}
+
+}
+    }
