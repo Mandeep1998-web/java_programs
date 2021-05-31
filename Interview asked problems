@@ -1,0 +1,39 @@
+package com.mandeep;
+
+/**
+ * Given a n*m matrix, I want to find whether it is toeplitz matrix or not
+ */
+
+
+
+public class ToeplitzMatrix {
+    public boolean isToeplitzMatrix(int[][] matrix){
+        //for matrix alway use row and col
+        for(int row=0;row<matrix.length-1;row++){
+             for(int col=0;col<matrix[row].length-1;col++)//matrix[row] will give the length of row
+                 if(matrix[row][col]!=matrix[row+1][col+1])
+                     return false;
+        }
+        return true;
+    }
+    private static void printmatrix(int[][] matrix)//here private because i dont anyone outside see it and static i dont want to create object to call it
+    {
+        for (int[] row : matrix) { // it's shows 1 d array
+            for (int val : row) {
+                System.out.print(val+" ");
+            }
+            System.out.println();
+        }
+    }
+    public static void main(String[] args) {
+        ToeplitzMatrix toeplitzMatrix=new ToeplitzMatrix();
+        int[][] testCase1={{1,2,3},{4,5,6},{7,8,9}};
+        printmatrix(testCase1);
+        System.out.println("isTestcase 1 is toeplitzmatrix: " +toeplitzMatrix.isToeplitzMatrix(testCase1));
+
+        int [][] testcase2={{1,2,3,4},{5,1,2,3},{9,5,1,2}};
+        printmatrix(testcase2);
+        System.out.println("isTestcase 2 is toeplitzmatrix: " +toeplitzMatrix.isToeplitzMatrix(testcase2));
+
+    }
+}
