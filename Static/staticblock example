@@ -1,0 +1,12 @@
+//Load something before main method
+public class Fibonnaci {
+    static {
+
+        System.out.println("i want to load first because i m in static block");
+    }
+
+    public static void main(String[] args) {
+        System.out.println("i am the expreession of the main function" +
+                "i load after static");
+    }
+}
