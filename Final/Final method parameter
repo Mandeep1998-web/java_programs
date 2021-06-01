@@ -1,0 +1,20 @@
+package com.company;
+class GetSalary{
+    private int salary=100000;
+   public double bonus( final double salary){ // if you remove final then salary can be changeable
+       salary=salary*2;
+       return salary*0.2;
+   }
+
+}
+
+public class Main {
+
+    public static void main(String[] args) {
+	int salary=5000;
+	GetSalary obj=new GetSalary();
+	double result= obj.bonus(salary);
+        System.out.println(result);
+
+    }
+}
