@@ -1,0 +1,32 @@
+//program to find lcm
+package com.company;
+
+
+public class Main {
+
+    public static void main(String[] args) throws CloneNotSupportedException {
+    A obj=new A() ;
+    obj.i=5;
+    obj.j=8;
+   A obj2=(A)obj.clone();// clone is protected otherwise we have to do typecasting
+        System.out.println(obj.i);
+        System.out.println(obj.j);
+    //    System.out.println("shallow copy"); it will change the value of existing variabl also because here we dont
+        //create object2
+        System.out.println("Deep copy");
+        System.out.println(obj2.i);
+        System.out.println(obj2.j);
+
+    }
+}
+class A implements Cloneable{ //by default all the classes extend object class
+    /*
+    here i have to implement interface cloneable because otherwise java does not allow anyone to clone the instances
+     */
+    int i;
+    int j;
+    public Object clone() throws CloneNotSupportedException // it will return object
+    {
+        return super.clone();
+    }
+}
