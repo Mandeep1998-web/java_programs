@@ -1,0 +1,18 @@
+//program to find convert decimal to integer
+package com.company;
+
+public class Main {
+
+    public static void main(String[] args) {
+        int num=8,sum=0,i=1;
+        while(num!=0){
+            int rem=num%2;
+            num=num/2;
+            sum+=rem*i;
+            i=i*10;
+        }
+        System.out.println(sum);
+
+    }
+
+}
