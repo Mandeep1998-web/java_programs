@@ -1,0 +1,19 @@
+//program to find gcd
+package com.company;
+
+public class Main {
+
+    public static void main(String[] args) {
+        int num1=200,num2=150,op1=0,op2=0;
+       int smaller= num1<num2?num1:num2;
+       int i;
+        for(i=smaller;i>=1;i--){
+            if((num1%i==0) && (num2%i==0)) {
+                System.out.println(i);
+                break;
+            }
+        }
+
+        }
+
+    }
