@@ -1,0 +1,30 @@
+package com.company;
+import java.io.ByteArrayOutputStream;
+import java.io.File;
+import java.io.FileOutputStream;
+import net.glxn.qrgen.QRCode;
+import net.glxn.qrgen.image.ImageType;
+
+public class Main {
+
+    public static void main(String[] args)  throws Exception
+    {
+	String details="Mandeep Singh : Channel Name : Mandeep Singh";
+	/*
+	firstly it will create the string
+	 */
+        ByteArrayOutputStream out = QRCode.from(details).to(ImageType.JPG).stream();
+        /*
+        from this detail to image type
+         */
+        File f =new File("/home/mandeep/Downloads/MyChannel.jpg");
+        /*
+        location where to store
+         */
+        FileOutputStream fos=new FileOutputStream(f);
+        fos.write(out.toByteArray());
+        // bytearray stream to byte array
+        fos.flush();
+
+    }
+}
