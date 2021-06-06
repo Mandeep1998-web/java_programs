@@ -1,0 +1,20 @@
+/******************************************************************************
+Traversing using iterator
+
+*******************************************************************************/
+import java.util.*;
+public class Main
+{
+	public static void main(String[] args) {
+		ArrayList <String> obj=new ArrayList<String>();
+		obj.add("phizer");
+		obj.add("covaxin");
+		obj.add("covishield");
+	    System.out.println("Total size is "+obj.size());
+    Iterator it= obj.iterator(); // here Type Iterator and call is form iterator
+    while(it.hasNext()){
+        System.out.println(it.next());
+    }
+		
+	}
+}
