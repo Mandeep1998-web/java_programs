@@ -1,0 +1,20 @@
+package com.company;
+import java.util.*;
+
+
+    class Main {
+        public static void main(String[] args) {
+            HashSet<String> hset=new HashSet<String>();
+            hset.add("java");
+            hset.add("python");
+            hset.add("c++");
+
+            Iterator<String> itr=hset.iterator();
+            System.out.println("Contents of Hashset");
+            while (itr.hasNext())
+                System.out.println(itr.next());
+
+        }
+    }
+
+
