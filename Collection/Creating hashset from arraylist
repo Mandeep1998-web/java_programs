@@ -1,0 +1,21 @@
+package com.company;
+import java.util.*;
+
+
+    class Main {
+        public static void main(String[] args) {
+            ArrayList<String> obj=new ArrayList<String>();
+            obj.add("java");
+            obj.add("python");
+            obj.add("c++");
+            HashSet<String> hset=new HashSet<String>(obj);
+           hset.add("machine learning");
+            Iterator<String> itr=hset.iterator();
+            System.out.println("Contents of Hashset");
+            while (itr.hasNext())
+                System.out.println(itr.next());
+
+        }
+    }
+
+
