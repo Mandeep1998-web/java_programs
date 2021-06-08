@@ -1,0 +1,32 @@
+package com.company;
+    import java.util.*;
+  public class Main {
+// Find the nearest smaller numbers on left side in an array
+        public static void Leftsidecheck(int arr[]) {
+            System.out.print("_, ");
+            int l=arr.length;
+            int j;
+            for(int i=1;i<l;i++){
+                for( j=i-1;j>=0;j--){
+                    if(arr[j]<arr[i]) {
+                        System.out.print(arr[j]);
+                        System.out.print(" ");
+                        break;
+                    }
+                }
+                if(j==-1){
+                    System.out.print("_, ");
+
+                }
+            }
+
+        }
+            public static void main(String[] args) {
+                int arr[] = new int[]{10, 1, 20, 22, 95};
+                Leftsidecheck(arr);
+
+            }
+    }
+
+
+
