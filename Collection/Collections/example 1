@@ -1,0 +1,16 @@
+package com.company;
+import java.util.*;
+public class Main {
+    public static void main(String a[]){
+        List<String> list = new ArrayList<String>();
+        list.add("python");
+        list.add("java");
+        list.add("Go");
+        System.out.println("Initial collection"+list);
+        Collections.addAll(list, "Rust" ,"Kotlin");
+        System.out.println("After adding elements"+list);
+        String[] strArr={"django","java script"};
+        Collections.addAll(list,strArr);
+        System.out.println(list);
+    }
+}
