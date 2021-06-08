@@ -1,0 +1,32 @@
+package com.company;
+import java.util.*;
+
+class Employee implements Comparable<Employee>
+{
+double salary;
+String name;
+Employee(String n, double sal){
+    salary=sal;
+    name=n;
+}
+public int compareTo(Employee obj) {
+    if (salary == obj.salary)
+        return 0;
+    else if (salary > obj.salary)
+        return 1;
+    else
+        return -1;
+}}
+public class Main {
+    public static void main(String[] args) {
+        ArrayList<Employee> empList=new ArrayList<Employee>();
+        empList.add(new Employee("Akshay",55000));
+        empList.add(new Employee("karan",5500));
+        empList.add(new Employee("kajal",550));
+        Collections.sort(empList);
+        System.out.println("** Sorted Order in Salary .**");
+        for(Employee e:empList)
+            System.out.println(e.name+" "+e.salary);
+
+    }
+}
