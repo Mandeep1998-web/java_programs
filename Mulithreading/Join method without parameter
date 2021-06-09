@@ -1,0 +1,38 @@
+package com.company;
+class JoinMethodExample extends Thread
+{
+    JoinMethodExample(String str)
+    {
+        super(str);
+        start();
+    }
+    public void run(){
+        try{
+            System.out.println("hello from thread "+getName());
+            Thread.sleep(1000);
+            System.out.println("BYe from thread "+getName());
+         }
+        catch (InterruptedException E)
+        {
+            System.out.println("Error:"+E);
+        }
+    }
+}
+public class Main {
+    public static void main(String[] args) {
+        // First thread uses join method inside try in main method
+        /*
+        that means all other threads must wait before it gets finished
+         */
+	try {
+	    new JoinMethodExample("First").join();
+	    //it will hold everything until t1 completes
+    }
+	catch (Exception e){
+	    System.out.println("Error: "+e);
+    }
+	new JoinMethodExample("Second");
+	new JoinMethodExample("Third");
+    }
+    }
+
