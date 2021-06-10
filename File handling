@@ -1,0 +1,18 @@
+import java.io.FileOutputStream;
+
+public class Main
+{
+	public static void main(String[] args) throws Exception{
+	    FileOutputStream fos=new FileOutputStream("demo.txt");
+	    // we have created a file name demo.txt
+	    DataOutputStream dos=new DataOutputStream(fos);
+		dos.writeUTF("Demo content");//here we have write the data 
+		
+		FileInputStream fis=new FileInputStream("demo.txt");
+		DataInputStream dis=new DataInputStream(fis);
+		String str=dis.readUTF();
+		//here we have read the data
+		System.out.println(str);
+		
+	}
+}
