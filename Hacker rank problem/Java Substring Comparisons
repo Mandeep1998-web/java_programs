@@ -1,0 +1,33 @@
+import java.util.Scanner;
+
+public class Solution {
+
+    public static String getSmallestAndLargest(String s, int k) {
+        String smallest = "";
+        String largest = "";
+        int l=s.length();
+        int j,i;
+        String currstr=s.substring(0,k);
+        String lexmin=currstr;
+        String lexmax=currstr;
+        for( i=k;i<s.length();i++){
+            currstr=currstr.substring(1,k)+s.charAt(i);
+            if(lexmax.compareTo(currstr)<0)
+                lexmax=currstr;
+                if(lexmin.compareTo(currstr)>0)
+                 lexmin=currstr;
+        }
+
+        return lexmin + "\n" + lexmax;
+    }
+
+
+    public static void main(String[] args) {
+        Scanner scan = new Scanner(System.in);
+        String s = scan.next();
+        int k = scan.nextInt();
+        scan.close();
+      
+        System.out.println(getSmallestAndLargest(s, k));
+    }
+}
