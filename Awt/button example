@@ -1,0 +1,18 @@
+package com.company;
+
+import java.awt.*;
+
+public class Main  extends Frame  {
+        Main(){
+            Button b=new Button("click me");
+            b.setBounds(30,100,80,30);//setting button position
+            add(b);//adding button to frame
+            setSize(300,300);
+            setLayout(null);
+            setVisible(true);
+
+        }
+        public static void main(String args[]){
+            Main F=new Main();
+        }
+}
