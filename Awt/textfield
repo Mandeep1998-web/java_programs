@@ -1,0 +1,23 @@
+
+import java.awt.*;
+public class Swap {
+
+    public static void main(String[] args) {
+        Frame f=new Frame("My Frame");
+        Label l1=new Label("First");
+
+        Label l2=new Label("Second");
+        TextField t1=new TextField(10);//here size is 10
+        TextField t2=new TextField(10);//here size is 10
+        Button b1=new Button("OK");
+        f.add(l1);
+        f.add(t1);// here i add layout text then layout then text so remember it
+        f.add(l2);
+        f.add(t2);
+        f.add(b1);
+        f.setLayout(new FlowLayout());
+        f.setSize(300,300);
+        f.setVisible(true);
+
+    }
+}
