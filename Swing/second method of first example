@@ -1,0 +1,14 @@
+import javax.swing.*;
+public class SwingExample extends JFrame {
+    public SwingExample(){}// and here i write this constructor because if he call the unparamaterized constructor then it will get errror
+    //becuase we make parameterized construtctor so compiler will not make any from its own
+public  SwingExample(String s){
+    super(s);// so here the default is super() it is for non paramterized but we need paramterized so we write super(s)
+}
+    public static void main(String[] args){
+        SwingExample jf=new SwingExample("Swing example");
+        jf.setSize(300,300);
+        jf.setVisible(true);
+        jf.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+    }
+}
