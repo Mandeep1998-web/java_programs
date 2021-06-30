@@ -1,8 +1,7 @@
 package com.company;
 class GetSalary{
-    private int salary=100000;
    public double bonus( final double salary){ // if you remove final then salary can be changeable
-       salary=salary*2;
+     //  salary=salary*2;
        return salary*0.2;
    }
 
