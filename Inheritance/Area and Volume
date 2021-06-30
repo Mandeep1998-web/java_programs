@@ -19,7 +19,7 @@ class HelloWorld {
     public static void main(String[] args) {
         volumeofrectangle obj2=new volumeofrectangle();
         int get_area=obj2.find_area(10,20);
-        obj2.find_volume(10,get_area);
+      int final_result obj2.find_volume(10,get_area);
         //System.out.println(final_result);
     }
 }
