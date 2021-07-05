@@ -1,0 +1,42 @@
+package com.company;
+import javax.swing.*;
+public class Main extends JFrame{
+   JLabel l1,l2,l3,l4;
+    JTextField t1,t2;
+    JButton b1;
+    public Main(){}
+    public Main(String s){
+        super(s);
+    }
+    public void setComponents(){
+        l1=new JLabel("Additon of two numbers");
+        l2=new JLabel("first Number");
+        l3=new JLabel("Second Number");
+        l4=new JLabel();
+        t1=new JTextField();
+        t2=new JTextField();
+        b1=new JButton("Add");
+        setLayout(null);
+        l1.setBounds(30,30,100,30);
+        l2.setBounds(30,40,50,20);
+        t1.setBounds(70,60,50,20);
+        l3.setBounds(30,100,70,20);//x,y,width,height
+        t2.setBounds(30,100,100,20);
+        b1.setBounds(60,100,100,20);
+        l4.setBounds(30,100,100,20);
+        add(l1);
+        add(t1);
+        add(l2);
+        add(t2);
+        add(l3);
+        add(b1);
+        add(l4);
+
+    }
+    public static void main(String[] args) {
+        Main jf=new Main("Swing Example");
+	jf.setSize(500,500);
+	jf.setVisible(true);
+	jf.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+    }
+}
