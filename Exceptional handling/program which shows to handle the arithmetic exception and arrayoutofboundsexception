@@ -1,0 +1,25 @@
+// program which shows to handle the arithmetic exception and arrayoutofboundsexception
+import java.util.*;
+public class MultipleExceptionhandling {
+    public static void main(String[] args) {
+        try {
+       Scanner obj=new Scanner(System.in);
+       int n=obj.nextInt();
+            System.out.println("n ="+n);
+           int a=45/n;
+           int b[]={10,20,30};
+           b[50]=100;
+        }
+        catch (ArithmeticException ae) {
+            System.out.println(ae);
+        }
+        catch(ArrayIndexOutOfBoundsException aie){
+         aie.printStackTrace();//its important
+        }
+        finally {
+            System.out.println("close files");
+        }
+
+    }
+
+}
