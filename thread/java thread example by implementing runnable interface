@@ -1,0 +1,12 @@
+//java thread example by implementing runnable interface
+public class threadcreation implements Runnable{
+    public void run(){
+        System.out.println("thread is running");
+    }
+    public static void main(String args[]){
+        threadcreation obj=new threadcreation();
+        Thread t1=new Thread(obj);
+        t1.start();
+    }
+
+}
