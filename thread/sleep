@@ -1,0 +1,23 @@
+import java.io.IOException;
+
+public class sleepmethodinjava extends Thread{
+
+    public void run(){
+        for(int i=1;i<5;i++){
+            try{
+                Thread.sleep(800);
+            }
+            catch (InterruptedException ae){
+                System.out.println(ae);
+            }
+            System.out.println(i);
+        }
+    }
+    public static void main(String[] args){
+        sleepmethodinjava obj1=new sleepmethodinjava();
+        sleepmethodinjava obj2=new sleepmethodinjava();
+        obj1.start();
+        obj2.start();
+    }
+}
+// here in output first 1 is from 1 thread and second is from 2nd thread
