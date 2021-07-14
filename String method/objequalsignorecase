@@ -1,0 +1,27 @@
+import java.util.Scanner;
+
+public class Searchingforastring {
+    public static void main(String[] args) {
+        Scanner obj = new Scanner(System.in);
+        System.out.println("Enter how many string do you want to put");
+        int num = obj.nextInt();
+        obj.nextLine();
+        String Characterarray[] = new String[num];
+        for (int i = 0; i < num; i++) {
+            Characterarray[i] = obj.nextLine();
+        }
+        System.out.println("Enter the target string");
+        String target = obj.nextLine();
+        int k;
+        for ( k = 0; k < num; k++) {
+            if (target.equalsIgnoreCase(Characterarray[k])) {
+                System.out.println("yes found");
+                break;
+            }
+        }
+        if (k==num){
+            System.out.println("not found");
+        }
+
+    }
+}
