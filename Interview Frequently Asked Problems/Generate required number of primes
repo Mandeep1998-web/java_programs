@@ -1,0 +1,38 @@
+import java.sql.SQLOutput;
+import java.util.*;
+
+class Main {
+    public Boolean IsPrime(int num) {
+        int count = 0;
+        for (int i = 1; i <= num; i++) {
+            if (num %i==0) {
+                count++;
+            }
+        }
+        if(count==2){
+            return true;
+        }
+        else
+            return false;
+    }
+    public void Findprime(int max) {
+        int count = 1, num = 2;
+        while (count <= max) {
+            if (IsPrime(num)) {
+                System.out.println(num);
+                count++;
+            }
+           num++;
+        }
+    }
+}
+    public class Primeinrange {
+        public static void main(String[] args) {
+            Scanner obj = new Scanner(System.in);
+            System.out.println("Enter the number how many prime number you need");
+            int num = obj.nextInt();
+            Main obj1=new Main();
+            obj1.Findprime(num);
+        }
+    }
+
